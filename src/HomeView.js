@@ -1,7 +1,7 @@
 import React from 'react'
 import {
     Card, CardBody,
-    CardTitle, CardSubtitle, Button
+    CardTitle, CardSubtitle, Button, Text
   } from 'reactstrap';
 
 function HomeView(props){
@@ -51,7 +51,7 @@ function HomeView(props){
                     
                         <div className="row" style={{marginTop:"50px"}}>
                                 <div className="col-md">
-                                    <text style={{fontSize:"14px",float:"left"}}><i>USD - United State Dollars</i></text>
+                                    <div className="text" style={{fontSize:"14px",float:"left"}}><i>USD - United State Dollars</i></div>
                                 </div>
                         </div>
                         <div className="row">
@@ -97,14 +97,14 @@ function HomeView(props){
                                                                     <div className="row">
                                                                         <div className="col">
                                                                             {/* Alias of currencies, ex: Indonesian Rupiah */}
-                                                                            <text style={{fontSize:"14px",float:"left"}}><i>{alias}</i></text>
+                                                                            <div className="text" style={{fontSize:"14px",float:"left"}}><i>{alias}</i></div>
             
                                                                         </div>
                                                                     </div>  
                                                                     <div className="row">
                                                                         <div className="col">
                                                                             {/* Exchange rate of selected currency */}
-                                                                            <text style={{fontSize:"14px",float:"left"}}><i>1 USD = {selected} {converted_rate}</i></text>
+                                                                            <div className="text" style={{fontSize:"14px",float:"left"}}><i>1 USD = {selected} {converted_rate}</i></div>
 
                                                                         </div>
                                                                         <div className="col">
@@ -132,7 +132,7 @@ function HomeView(props){
                                 { currList ? 
                                 <div>
                                     <div className="row" style={{marginTop:"30px"}}>
-                                        <text>Please choose the currency</text>
+                                        <div className="text">Please choose the currency</div>
                                     </div>
                                     <div className="row container">
                                         <select className="custom-select" value={dispSelectedCurrency} onChange={changeCurrency} style={{marginTop:"15px"}}> {currencyList} </select> 

@@ -44,7 +44,7 @@ function HomePage() {
 
     function handleChange (e) {
         setDisplaySelectedCurrency(e.target.value)
-        console.log(e.target.value)
+        // console.log(e.target.value)
     }
 
     function handleSubmit () {
