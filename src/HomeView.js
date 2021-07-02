@@ -1,7 +1,7 @@
 import React from 'react'
 import {
     Card, CardBody,
-    CardTitle, CardSubtitle, Button, Text
+    CardTitle, CardSubtitle, Button,
   } from 'reactstrap';
 
 function HomeView(props){
